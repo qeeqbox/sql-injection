@@ -1,6 +1,6 @@
 <p align="center"> <img src="https://raw.githubusercontent.com/qeeqbox/sql-injection/main/sql-injection.png"></p>
 
-A threat may alter structured query language (SQL) query to read, modify and write to the database or execute administrative commands for further chained attacks (The threat actor usually gets output or verbose errors while performing the injection)
+A threat may alter structured query language (SQL) query to read, modify and write to the database or execute administrative commands for further chained attacks (The threat actor may get output or verbose errors while performing the injection)
 
 ## Example #1
 1. Threat actor sends a malicious SQL query to a vulnerable target
