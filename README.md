@@ -7,7 +7,7 @@ A threat actor may alter structured query language (SQL) query to read, modify a
 2. The target process the query and return the result
 
 ## Code
-#### Target Logic 
+#### Target-Logic 
 ```js
 ...
 app.post("/query", (request, response) => {
@@ -19,7 +19,7 @@ app.post("/query", (request, response) => {
 ...
 ```
 
-#### Target-in
+#### Target-In
 ```
 test';--
 ```
