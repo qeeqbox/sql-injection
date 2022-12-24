@@ -8,10 +8,11 @@ A threat actor may alter structured query language (SQL) query to read, modify a
 
 ## Code
 #### Target Logic 
-```nodejs
+```js
 ...
 app.post("/query", (request, response) => {
-  connection.query("SELECT * FROM users WHERE username = '"+ request.body.username +"' AND password = '"+ request.body.password +"'", (error, result) => {
+  const query = "SELECT * FROM users WHERE username = '"+ request.body.username +"' AND password = '"+ request.body.password +"'"
+  connection.query(query, (error, result) => {
     response.json({"result":result,"err":error});
   });
 });
