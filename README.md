@@ -4,7 +4,7 @@ An application enables users to interact with a database insecurely. A threat ac
 
 Clone this current repo recursively
 ```sh
-git clone --recursive https://github.com/qeeqbox/sql-injection
+git clone --recurse-submodules https://github.com/qeeqbox/sql-injection
 ```
 Run the webapp using Python
 ```sh
