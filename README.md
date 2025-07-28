@@ -90,22 +90,3 @@ The get_user() function returns info about a user using their id without checkin
             ret = str(e).encode("utf-8")
         return ret
 ```
-```
- 
-## Impact
-Vary
-
-## Risk
-- Unauthorized Access
-- System Compromise
-- Operational Disruption
-- Legal and Financial Damage
-  - Compliance Failures
-  - Reputation Damage
-
-## Redemption
-- Disable, remove or change default credentials
-- Alternative Authentication Mechanisms
-
-## ID
-91f9b046-b802-425a-b71b-64c21c6b1c0f
