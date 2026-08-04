@@ -23,7 +23,7 @@ SQL Injection (SQLi) is a security vulnerability that allows an attacker to inte
 - Keep Software Updated: Regularly patch database servers, frameworks, and libraries to address known vulnerabilities.
 - Monitor and Log Database Activity: Track unusual queries or suspicious behavior that may indicate SQL injection attempts.
 
-## Example
+## SQL Injection Mitigation Example
 Clone this current repo recursively
 ```sh
 git clone --recurse-submodules https://github.com/qeeqbox/sql-injection
