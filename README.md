@@ -1,7 +1,29 @@
 <p align="center"> <img src="https://raw.githubusercontent.com/qeeqbox/sql-injection/main/content/sql-injection.svg"></p>
 
-An application enables users to interact with a database insecurely. A threat actor can exploit this feature by injecting a malicious query into a trusted web application. When the malicious query is executed, the application behaves shows errors. This type of behavior indicates that the attack is not blind
+## SQL Injection (SQLi)
+SQL Injection (SQLi) is a security vulnerability that allows an attacker to interfere with the SQL queries that an application sends to its database. By injecting malicious SQL statements into application inputs, an attacker can read, modify, or delete data, bypass authentication, or conduct other unauthorized operations on the database.
 
+## How SQL Injection Works
+1. Identify Vulnerable Inputs: The attacker locates inputs in the application that are included in SQL queries without proper validation or parameterization.
+2. Inject Malicious SQL: The attacker provides specially crafted SQL syntax as input to alter the intended database query.
+3. Query Execution: If the application does not properly validate or parameterize user input, the database executes the modified SQL query.
+
+## Impact of SQL Injection
+- Authentication Bypass: Attackers can log in without valid credentials. 
+- Data Disclosure: Sensitive information stored in the database can be read.
+- Data Modification: Records in the database can be inserted, updated, or deleted.
+- Administrative Actions: Unauthorized operations can be performed if the database account used by the application has sufficient privileges.
+- System Compromise: In some cases, SQL injection can be exploited to execute operating system commands or gain further control over the underlying server.
+
+## SQL Injection Mitigation Strategies
+- Use Parameterized Queries (Prepared Statements): Separate SQL code from user input to prevent injections.
+- Validate User Input: Accept only expected input formats and reject invalid data.
+- Apply the Principle of Least Privilege: Restrict database account permissions to only what is necessary.
+- Avoid Dynamic SQL: Do not build SQL statements by concatenating user input.
+- Keep Software Updated: Regularly patch database servers, frameworks, and libraries to address known vulnerabilities.
+- Monitor and Log Database Activity: Track unusual queries or suspicious behavior that may indicate SQL injection attempts.
+
+## Example
 Clone this current repo recursively
 ```sh
 git clone --recurse-submodules https://github.com/qeeqbox/sql-injection
