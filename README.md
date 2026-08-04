@@ -15,7 +15,7 @@ SQL Injection (SQLi) is a security vulnerability that allows an attacker to inte
 - Administrative Actions: Unauthorized operations can be performed if the database account used by the application has sufficient privileges.
 - System Compromise: In some cases, SQL injection can be exploited to execute operating system commands or gain further control over the underlying server.
 
-## SQL Injection Mitigation Strategies
+## SQL Injection Mitigation
 - Use Parameterized Queries (Prepared Statements): Separate SQL code from user input to prevent injections.
 - Validate User Input: Accept only expected input formats and reject invalid data.
 - Apply the Principle of Least Privilege: Restrict database account permissions to only what is necessary.
