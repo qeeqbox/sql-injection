@@ -8,7 +8,7 @@ SQL Injection (SQLi) is a security vulnerability that allows an attacker to inte
 2. Inject Malicious SQL: The attacker provides specially crafted SQL syntax as input to alter the intended database query.
 3. Query Execution: If the application does not properly validate or parameterize user input, the database executes the modified SQL query.
 
-## Impact of SQL Injection
+## SQL Injection Impact
 - Authentication Bypass: Attackers can log in without valid credentials. 
 - Data Disclosure: Sensitive information stored in the database can be read.
 - Data Modification: Records in the database can be inserted, updated, or deleted.
